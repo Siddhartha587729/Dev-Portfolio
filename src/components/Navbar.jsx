@@ -20,7 +20,7 @@ const Navbar = () => {
           window.scrollTo(0,0);
         }}>
           <img src={logo} alt="logo" className='w-12 h-11 object-contain' />
-          <p className='text-white text-[20px] font-bold cursor-pointer flex'>Siddhartha &nbsp;<span className='sm:block text-white-200'>| &nbsp; Full Stack Dev</span></p>
+          <p className='text-white text-[20px] font-bold cursor-pointer flex'>Siddhartha &nbsp;<span className='sm:block text-white-200'>| &nbsp; Developer</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link)=>(
