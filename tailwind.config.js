@@ -21,6 +21,13 @@ export default {
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
+        "grey-100" : "#33383c",
+        "grey-200": "#404040",
+        "magenta": "#bc72fe",
+        "orange": "#f87d61",
+        "red": "#f7542e",
+        "sky-blue": "#d1efed",
+        
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",

@@ -11,14 +11,30 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient'/>
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white-100`}>
             Hi, I'm <span className="text-[#915eff]">Siddhartha</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-200`}>
             I am full stack web developer <br className='sm:block hidden'/>and this is my ThreeJS 3D portfolio
           </p>
         </div>
-        <ComputersCanvas/>
+      </div>
+        <ComputersCanvas />
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            {/* framer motion */}
+            <motion.dev animate={{
+              y: [0, 24, 0]}
+            }
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              repeatType: 'loop'
+            }
+            } className="w-3 h-3 rounded-full bg-secondary mb-1"/>
+          </div>
+        </a>
       </div>
     </section>
   )
