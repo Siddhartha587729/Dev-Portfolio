@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { styles } from "../styles"
 import { navLinks } from "../constants"
 import { logo, menu, close } from "../assets"
+import { BookUser } from 'lucide-react';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -19,7 +20,8 @@ const Navbar = () => {
           setActive("");
           window.scrollTo(0,0);
         }}>
-          <img src={logo} alt="logo" className='w-12 h-11 object-contain' />
+          {/* <img src={logo} alt="logo" className='w-12 h-11 object-contain' /> */}
+          <BookUser />
           <p className='text-white text-[20px] font-bold cursor-pointer flex'>Siddhartha &nbsp;<span className='sm:block text-white-200'>| &nbsp; Developer</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>

@@ -12,17 +12,19 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white-100`}>
-            Hi, I'm <span className="text-[#915eff]">Siddhartha</span>
+            <p>Hi,</p> I'm <span className="text-[#915eff]">Siddhartha</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-200`}>
-            I am full stack web developer <br className='sm:block hidden'/>and this is my ThreeJS 3D portfolio
+            a full stack web developer <br className='sm:block hidden'/>and this is my portfolio
           </p>
         </div>
       </div>
+      <div className="absolute h-full w-[40%] left-[50%] ">
         <ComputersCanvas />
+      </div>
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+          <div className="w-[35px] h-[59px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             {/* framer motion */}
             <motion.dev animate={{
               y: [0, 24, 0]}
