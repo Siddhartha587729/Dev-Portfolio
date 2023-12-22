@@ -20,8 +20,8 @@ const Navbar = () => {
           setActive("");
           window.scrollTo(0,0);
         }}>
-          {/* <img src={logo} alt="logo" className='w-12 h-11 object-contain' /> */}
-          <BookUser />
+          <img src={logo} alt="logo" className='mr-2 w-10 h-10 object-contain' />
+          {/* <BookUser /> */}
           <p className='text-white text-[20px] font-bold cursor-pointer flex'>Siddhartha &nbsp;<span className='sm:block text-white-200'>| &nbsp; Developer</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>

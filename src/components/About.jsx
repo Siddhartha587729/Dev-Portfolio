@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Tilt } from 'react-tilt'
 import {motion} from 'framer-motion'
 import {styles} from '../styles'
 import {services} from '../constants'
 import {fadeIn, textVariant} from '../utils/motion'
 import { SectionWrapper } from '../hoc'
+import { ScrollText } from 'lucide-react';
+import Me  from '../assets/me.jpeg'
 
 const ServiceCard =({index,title,icon}) =>{
   console.log(title);
@@ -29,17 +31,41 @@ const ServiceCard =({index,title,icon}) =>{
   )
 }
 
+
 const About = () => {
+  const [load, setload] = useState(false);
+
+  const downloadCV = ()=>{
+  
+    setload(true);
+    setTimeout(()=>{
+      alert("Thanks")
+      setload(false);
+    },2000)
+    
+  }
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>My Introduction</p>
+        <h2 className={styles.sectionHeadText}>About Me.</h2>
       </motion.div>
-      <motion.p variants={fadeIn("","",0.1,1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt voluptatem nemo minus consequatur quod veniam harum soluta sed, ipsam odit provident eius non tempora unde omnis alias debitis ipsum quas inventore accusamus illum qui. Quas corporis nam cum? Voluptatibus fugit debitis maxime, blanditiis nam totam tenetur eos dolorem quis facere!
-      </motion.p>
-
+      <motion.div variants={fadeIn("","",0.1,1)} className='mt-4 text-secondary text-[17px] leading-[30px] flex lg:flex-no-wrap flex-wrap justify-center items-center gap-10'>
+        <img src={Me} alt="My pic" className='w-1/6 rounded-lg object-contain grayscale' />
+        <div className='max-w-3xl flex flex-wrap gap-10'>
+          <p>Lorem ipsum dolor, sit amet consectetur ipsam odit provident eius non tempora unde omnis alias debitis ipsum quas inventore accusamus illum qui. Quas corporis nam cum? Voluptatibus fugit debitis maxime, blanditiis nam totam tenetur eos dolorem quis facere!</p>
+          <div className='mt-3'>
+            <button 
+              onClick={downloadCV}
+              className='bg-tertiary py-3 px-8 ouline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl flex flex-wrap gap-3'
+              >
+                {load? "Downloading..." : "Download CV "} <ScrollText />
+            </button>
+          </div>
+        </div>
+      </motion.div>
+      
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index}{...service}/>
