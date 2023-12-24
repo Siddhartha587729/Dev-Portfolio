@@ -8,6 +8,7 @@ import {
     html,
     css,
     reactjs,
+    nextjs,
     redux,
     tailwind,
     nodejs,
@@ -15,6 +16,7 @@ import {
     git,
     figma,
     docker,
+    AWS,
     meta,
     starbucks,
     tesla,
@@ -23,6 +25,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    firebase,
+    portfolio,
   } from "../assets";
   
   export const navLinks = [
@@ -59,34 +63,10 @@ import {
     },
   ];
   
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
+  const techbackend =[
     {
       name: "Redux Toolkit",
       icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
     },
     {
       name: "Node JS",
@@ -105,13 +85,47 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Firebase",
+      icon: firebase
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "AWS",
+      icon: AWS
+    }
+  ];
+
+  const frontend = [
+    {
+      name: "HTML 5",
+      icon: html,
     },
+    {
+      name: "CSS 3",
+      icon: css,
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "NextJS",
+      icon: nextjs,
+    },
+    
+    {
+      name: "Tailwind",
+      icon: tailwind,
+    },
+    {
+      name: "Figma",
+      icon: figma,
+    },
+    
+     
   ];
   
   const experiences = [
@@ -174,7 +188,7 @@ import {
     {
       name: "3D Portfolio",
       description:
-        "Lorem ipsum dolor sit amet consectetur,praesentium Assumenda ea et placeat, ex adipisci obcaecati vel expedita a veniam eveniet autem.",
+        "This portfolio is built with Vite for a blazing-fast development experience, React for a modular UI, Three.js for stunning 3D graphics, and Tailwind CSS for a sleek and responsive design. It's designed to showcase your projects and skills in an engaging and interactive manner.",
       tags: [
         {
           name: "react",
@@ -189,13 +203,13 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: portfolio,
       source_code_link: "https://github.com/",
     },
     {
       name: "Manuscript Reader",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsa voluptates mollitia iure autem repellat debitis tempora, nesciunt esse aut!",
+        "Otani University collaboration: React site uses Tesseract OCR to translate uploaded manuscripts, integrating Google Translate API, ThreeJS, and Sanity.io backend.",
       tags: [
         {
           name: "react",
@@ -216,7 +230,28 @@ import {
     {
       name: "Expense Tracker",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, obcaecati accusantium autem unde in velit esse ad optio nobis dicta.",
+        "Effortlessly manage expenses with this React-based web app. Seamlessly stored on your browser, it simplifies budgeting. Efficient, user-friendly, and secure.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tripguide,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Mo Guide",
+      description:
+        "It is a tourist guide cum planner web app developed at the final stage of CODE4ODDISHA hackathon, ITER Bhubaneswar. The app focuses on the first time traveler to Odisha and uses previously gathered information to recommend places to visit with in-build planner and Google maps.",
       tags: [
         {
           name: "nextjs",
@@ -236,4 +271,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services,techbackend, frontend, experiences, testimonials, projects };
