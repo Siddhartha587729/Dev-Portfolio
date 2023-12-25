@@ -53,7 +53,7 @@ import {
       icon: web,
     },
     {
-      title: "React Developer",
+      title: "Mobile Developer",
       icon: mobile,
     },
     {
