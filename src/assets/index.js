@@ -34,6 +34,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import portfolio from "./portfolio.png"
+import expense from "./expense-app.png"
+import manuscript from "./manuscript.png"
+import moguide from "./mo-guide.png"
+
+import x from "./x.png"
+import linkedin from "./linkedin.png"
 
 export {
   logo,
@@ -69,4 +75,9 @@ export {
   tripguide,
   linkicon,
   portfolio,
+  expense,
+  moguide,
+  manuscript,
+  x,
+  linkedin
 };

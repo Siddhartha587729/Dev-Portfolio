@@ -8,6 +8,7 @@ import { SectionWrapper } from '../hoc'
 import { ScrollText } from 'lucide-react';
 import Me from '../assets/me.jpeg'
 
+
 const ServiceCard = ({ index, title, icon }) => {
   console.log(title);
   return (
@@ -58,6 +59,7 @@ const About = () => {
             efficient web solutions. My skills cover both front-end and back-end technologies, allowing me to approach
             development comprehensively. I'm passionate about crafting solutions that enhance user experiences and
             contribute to the success of web projects.</p>
+          
           <div className='mt-3'>
             <button
               onClick={downloadCV}
@@ -66,7 +68,9 @@ const About = () => {
               {load ? "Downloading..." : "Download CV "} <ScrollText />
             </button>
           </div>
+          
         </div>
+        
       </motion.div>
 
       <div className="mt-20 flex flex-wrap gap-10">

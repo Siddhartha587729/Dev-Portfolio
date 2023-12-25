@@ -27,6 +27,9 @@ import {
     threejs,
     firebase,
     portfolio,
+    manuscript,
+    moguide,
+    expense
   } from "../assets";
   
   export const navLinks = [
@@ -157,6 +160,7 @@ import {
     },
   ];
   
+
   const testimonials = [
     {
       testimonial:
@@ -186,7 +190,7 @@ import {
   
   const projects = [
     {
-      name: "3D Portfolio",
+      name: "Dev-Portfolio",
       description:
         "This portfolio is built with Vite for a blazing-fast development experience, React for a modular UI, Three.js for stunning 3D graphics, and Tailwind CSS for a sleek and responsive design. It's designed to showcase your projects and skills in an engaging and interactive manner.",
       tags: [
@@ -202,9 +206,18 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "EmailJS",
+          color: "white-text-gradient",
+        },
+        {
+          name: "Framer-motion",
+          color: "blue-text-gradient",
+        },
       ],
       image: portfolio,
-      source_code_link: "https://github.com/",
+      github_code_link: "https://github.com/Siddhartha587729/Dev-Portfolio",
+      source_code_link: "https://siddharthadev.club/",
     },
     {
       name: "Manuscript Reader",
@@ -216,16 +229,25 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "tailwind",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Tesseract",
           color: "pink-text-gradient",
         },
+        {
+          name: "ThreeJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Sanity.io",
+          color: "white-text-gradient",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: manuscript,
+      github_code_link: "https://github.com/Siddhartha587729/manuscipt-reader",
+      source_code_link: "https://github.com/Siddhartha587729/manuscipt-reader",
     },
     {
       name: "Expense Tracker",
@@ -233,20 +255,21 @@ import {
         "Effortlessly manage expenses with this React-based web app. Seamlessly stored on your browser, it simplifies budgeting. Efficient, user-friendly, and secure.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "css",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Local storage",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: expense,
+      github_code_link: "https://github.com/Siddhartha587729/expense-app",
+      source_code_link: "https://github.com/Siddhartha587729/expense-app",
     },
     {
       name: "Mo Guide",
@@ -254,20 +277,29 @@ import {
         "It is a tourist guide cum planner web app developed at the final stage of CODE4ODDISHA hackathon, ITER Bhubaneswar. The app focuses on the first time traveler to Odisha and uses previously gathered information to recommend places to visit with in-build planner and Google maps.",
       tags: [
         {
-          name: "nextjs",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "css",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "JS",
           color: "pink-text-gradient",
         },
+        {
+          name: "firebase",
+          color: "white-text-gradient",
+        },
+        {
+          name: "Gooogle-maps",
+          color: "blue-text-gradient",
+        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: moguide,
+      github_code_link: "https://github.com/Siddhartha587729/mo-guide/tree/main",
+      source_code_link: "https://github.com/Siddhartha587729/mo-guide/tree/main",
     },
   ];
   
