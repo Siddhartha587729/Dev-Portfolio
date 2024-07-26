@@ -16,7 +16,7 @@ Welcome to my impressive portfolio! This project showcases my skills and project
 - [License](#license)
 
 ## Introduction
-This portfolio is built with Vite for a blazing-fast development experience, React for a modular UI, Three.js for stunning 3D graphics, and Tailwind CSS for a sleek and responsive design. It's designed to showcase your projects and skills in an engaging and interactive manner.
+This portfolio is built with Vite for a blazing-fast development experience, React for a modular UI, Three.js for stunning 3D graphics, and Tailwind CSS for a sleek and responsive design. It's designed to showcase my projects and skills in an engaging and interactive manner.
 
 ## Features
 - **Modern Development:** Built with Vite for rapid development and optimized production builds.
