@@ -28,8 +28,11 @@ import {
     firebase,
     portfolio,
     manuscript,
+    art,
     moguide,
-    expense
+    expense,
+    c,cpp,jwt,auth
+
   } from "../assets";
   
   export const navLinks = [
@@ -49,28 +52,40 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "<Coder/>",
       icon: web,
     },
     {
-      title: "Mobile Developer",
+      title: "Designer🖌",
+      icon: creator,
+    },
+    {
+      title: "Frontend🖥️",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Backend⚙️",
       icon: backend,
     },
-    {
-      title: "Programming",
-      icon: creator,
-    },
+    
   ];
   
-  const techbackend =[
+  const languages =[
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "C",
+      icon: c
     },
+    {
+      name: "C++",
+      icon: cpp
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+  ]
+
+  const techbackend = [
     {
       name: "Node JS",
       icon: nodejs,
@@ -80,22 +95,10 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
       name: "Firebase",
-      icon: firebase
+      icon: firebase,
     },
-    {
-      name: "AWS",
-      icon: AWS
-    }
-  ];
+  ];  
 
   const frontend = [
     {
@@ -107,10 +110,6 @@ import {
       icon: css,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
@@ -118,7 +117,6 @@ import {
       name: "NextJS",
       icon: nextjs,
     },
-    
     {
       name: "Tailwind",
       icon: tailwind,
@@ -127,9 +125,43 @@ import {
       name: "Figma",
       icon: figma,
     },
-    
-     
   ];
+
+  const devops = [
+    {
+      name: "AWS",
+      icon: AWS,
+    },
+    {
+      name: "Git",
+      icon: git,
+    },
+    {
+      name: "Docker",
+      icon: docker,
+    },
+  ];
+
+  const tools = [
+    {
+      name: "Redux Toolkit",
+      icon: redux,
+    },
+    {
+      name: "Three JS",
+      icon: threejs,
+    },
+    {
+      name: "OAuth",
+      icon: auth,
+    },
+    {
+      name: "JWT",
+      icon: jwt,
+    },
+  ];
+  
+  
   
   const experiences = [
     {
@@ -190,7 +222,7 @@ import {
   
   const projects = [
     {
-      name: "Dev-Portfolio",
+      name: "Personal Portfolio",
       description:
         "This portfolio is built with Vite for a blazing-fast development experience, React for a modular UI, Three.js for stunning 3D graphics, and Tailwind CSS for a sleek and responsive design. It's designed to showcase your projects and skills in an engaging and interactive manner.",
       tags: [
@@ -222,7 +254,7 @@ import {
     {
       name: "Manuscript Reader",
       description:
-        "Otani University collaboration: React site uses Tesseract OCR to translate uploaded manuscripts, integrating Google Translate API, ThreeJS, and Sanity.io backend.",
+        "Made in colaboration with Otani University, used to preserve old script digitally. React site uses Tesseract OCR to translate uploaded manuscripts, integrating Google Translate API, ThreeJS, and Sanity.io backend.",
       tags: [
         {
           name: "react",
@@ -247,31 +279,30 @@ import {
       ],
       image: manuscript,
       github_code_link: "https://github.com/Siddhartha587729/manuscipt-reader",
-      source_code_link: "https://github.com/Siddhartha587729/manuscipt-reader",
+      source_code_link: "https://ms.siddharthadev.co/",
     },
     {
-      name: "Expense Tracker",
+      name: "Art Gallery",
       description:
-        "Effortlessly manage expenses with this React-based web app. Seamlessly stored on your browser, it simplifies budgeting. Efficient, user-friendly, and secure.",
+        "This is an e-commerce website created for painters and sketch artists to buy painting products.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind",
           color: "green-text-gradient",
         },
         {
-          name: "Local storage",
-          color: "pink-text-gradient",
+          name: "Sanity.io",
+          color: "white-text-gradient",
         },
       ],
-      image: expense,
-      github_code_link: "https://github.com/Siddhartha587729/expense-app",
-      source_code_link: "https://github.com/Siddhartha587729/expense-app",
-    },
-    {
+      image: art,
+      github_code_link: "https://github.com/Siddhartha587729/e-commerce-app",
+      source_code_link: "https://artgallery.siddharthadev.co/",
+    },{
       name: "Mo Guide",
       description:
         "It is a tourist guide cum planner web app developed at the final stage of CODE4ODDISHA hackathon, ITER Bhubaneswar. The app focuses on the first time traveler to Odisha and uses previously gathered information to recommend places to visit with in-build planner and Google maps.",
@@ -301,6 +332,48 @@ import {
       github_code_link: "https://github.com/Siddhartha587729/mo-guide/tree/main",
       source_code_link: "https://github.com/Siddhartha587729/mo-guide/tree/main",
     },
+    {
+      name: "Expense Tracker",
+      description:
+        "Effortlessly manage expenses with this React-based web app. Seamlessly stored on your browser, it simplifies budgeting. Efficient, user-friendly, and secure.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Local storage",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: expense,
+      github_code_link: "https://github.com/Siddhartha587729/expense-app",
+      source_code_link: "https://github.com/Siddhartha587729/expense-app",
+    },
+    
   ];
+
+  const Contacts = [
+    {
+      name: "Github",
+      link: "https://github.com/Siddhartha587729"
+    },
+    {
+      name: "Twitter",
+      link: "https://x.com/Siddhartha294"
+    },
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/siddhartha-kumar-748751223/"
+    },
+    {
+      name: "Instagram",
+      link: "https://www.instagram.com/siddhartha_kumar13/"
+    }
+  ]
   
-  export { services,techbackend, frontend, experiences, testimonials, projects };
+  export { services, languages, frontend, techbackend, devops, tools, experiences, testimonials, projects, Contacts };

@@ -9,7 +9,6 @@ import close from "./close.svg";
 import linkicon from "./link-icon.png"
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -37,11 +36,27 @@ import portfolio from "./portfolio.png"
 import expense from "./expense-app.png"
 import manuscript from "./manuscript.png"
 import moguide from "./mo-guide.png"
+import art from "./art.png"
 
 import x from "./x.png"
 import linkedin from "./linkedin.png"
 
+import catfish from "./catfish.json"
+import catloader from "./catloader.json"
+import catpeak from "./catpeak.json"
+import planet from "./pplanet.png"
+import bplanet from "./bplanet.png"
+import c from "./c.png"
+import cpp from "./cpp.png"
+import auth from "./auth.png"
+import jwt from "./jwt.png"
+import docker from "./docker.png"
+
 export {
+  c,
+  cpp,
+  auth,
+  jwt,
   logo,
   backend,
   creator,
@@ -78,6 +93,12 @@ export {
   expense,
   moguide,
   manuscript,
+  art,
   x,
-  linkedin
+  linkedin,
+  catfish,
+  catloader,
+  catpeak,
+  planet,   
+  bplanet,   
 };
